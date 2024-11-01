@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Study Reminder</title>
+    <link rel="stylesheet" type="text/css" href="">
+</head>
+<body>
+    <h1>Create Study Reminder</h1>
+
+    <a href="{%url 'list'%}" style='--clr:#1e9bff'><span>Remainders</span><i></i></a>
+    <a href="{%url 'source'%}" style='--clr:#1e9bff'><span>Back</span><i></i></a>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Create Reminder</button>
+    </form>
+</body>
+</html>

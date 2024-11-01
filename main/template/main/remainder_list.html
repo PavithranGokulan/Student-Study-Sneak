@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Remainders</title>
+</head>
+<body>
+  <a href="{%url 'create'%}" style='--clr:#1e9bff'><span>Back</span><i></i></a>
+    <ul>
+        {% for remainder in remainders %}
+          <li>
+            <h3>{{ remainder.title }}</h3>
+            <p>{{ remainder.description }}</p>
+            <p>Date: {{ remainder.date }}</p>
+            <p>Time: {{ remainder.time }}</p>
+          </li>
+        {% empty %}
+          <li>No reminders found</li>
+        {% endfor %}
+      </ul>
+
+</body>
+</html>

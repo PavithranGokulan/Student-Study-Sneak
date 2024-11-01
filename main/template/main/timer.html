@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+<title>
+  Pomodoro Timer
+</title>
+{% load static %}
+<link rel="stylesheet" href="{% static 'timer.css'%}">
+</head>
+<style>
+h1{
+  color:aliceblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 300%;
+}
+p{
+  color:dimgrey;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 169%;
+}
+</style>
+<body id='bg' style="background-image: url('{% static 'timer.jpg'%}');">
+  <script type="text/javascript" src="{% static 'timer.js' %}"></script>
+</body>
+<div id="pomodoro-app">
+  <div id="container">
+    <div id="timer">
+      <div id="time">
+        <span id="minutes">25</span>
+        <span id="colon">:</span>
+        <span id="seconds">00</span>
+      </div>
+      <div id="filler"></div>
+    </div>
+
+    <div id="buttons">
+      <button id="start">Start</button>
+      <button id="shortBreak">Short Break</button>
+      <button id="longBreak">Long Break</button>
+      <button id="stop">Stop</button>
+    </div>
+  </div>
+</div>
+<h1> LETS CRACK IT OFF</h1>
+<P > HERE YOU CAN MAKE USE OF THIS TIMER TO DO YOUR TASKS IN TIME AND  KEEP YOURSELF IN TRACK.START TIMER SETS YOUR GOAL FOR 25 MINUTES AND A LONG BREAK GIVES 15 MINUTES THEN A SHORT BREAK FOR 5 MINUTES
+  YOU SHALL STOP WHENEVER YOU NEED AND RESTART BY STARTING OVER AGAIN.
+</P> 
