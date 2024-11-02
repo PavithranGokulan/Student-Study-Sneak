@@ -55,7 +55,7 @@ ROOT_URLCONF = "allone.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [r'C:\Users\pavig\Desktop\project\PRO\Scripts\allone\main\template'],
+        "DIRS": [r'C:\Users\pavig\OneDrive\Desktop\allone\main\template'],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
